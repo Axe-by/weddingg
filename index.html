@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Али & Ая — Тойға шақырту</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --ivory:#faf8f5;
+  --beige:#e8dfd5;
+  --blush:#e6cfcf;
+  --gold:#c9b37e;
+  --dark:#3a3a3a;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  font-family:'Montserrat', sans-serif;
+  background:var(--ivory);
+  color:var(--dark);
+  line-height:1.8;
+  overflow-x:hidden;
+}
+
+/* ====== GLOBAL ====== */
+section {
+  padding:90px 20px;
+}
+
+.container {
+  max-width:1100px;
+  margin:auto;
+}
+
+h2 {
+  font-family:'Playfair Display', serif;
+  font-size:36px;
+  text-align:center;
+  margin-bottom:50px;
+  letter-spacing:1px;
+}
+
+.fade {
+  opacity:0;
+  transform:translateY(30px);
+  transition:1.2s ease;
+}
+.fade.show {
+  opacity:1;
+  transform:none;
+}
+
+/* ====== HERO ====== */
+.hero {
+  height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+    url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e') center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+}
+
+.hero h1 {
+  font-family:'Great Vibes', cursive;
+  font-size:72px;
+  margin-bottom:20px;
+}
+
+.hero p {
+  font-family:'Playfair Display', serif;
+  letter-spacing:2px;
+}
+
+/* ====== STORY ====== */
+.story {
+  background:var(--beige);
+}
+
+.story p {
+  max-width:700px;
+  margin:auto;
+  text-align:center;
+}
+
+/* ====== DETAILS ====== */
+.details-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  text-align:center;
+}
+
+.card {
+  background:#fff;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,.08);
+}
+
+/* ====== MAP ====== */
+iframe {
+  width:100%;
+  height:350px;
+  border:none;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,.1);
+}
+
+/* ====== COUNTDOWN ====== */
+.countdown {
+  display:flex;
+  justify-content:center;
+  gap:25px;
+}
+
+.time {
+  background:#fff;
+  padding:25px;
+  border-radius:20px;
+  min-width:90px;
+  box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+
+/* ====== GALLERY ====== */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.gallery img {
+  width:100%;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,.12);
+}
+
+/* ====== FORMS ====== */
+form {
+  max-width:500px;
+  margin:auto;
+}
+
+input, textarea, button {
+  width:100%;
+  padding:15px;
+  margin-bottom:15px;
+  border-radius:30px;
+  border:1px solid #ddd;
+  font-family:'Montserrat';
+}
+
+button {
+  background:var(--gold);
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  letter-spacing:1px;
+}
+
+/* ====== MUSIC ====== */
+.music {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#fff;
+  border-radius:50%;
+  width:55px;
+  height:55px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.15);
+  cursor:pointer;
+  z-index:99;
+}
+  
+  /* ====== KAZAKH ORNAMENT ====== */
+.ornament-top,
+.ornament-bottom {
+  width:100%;
+  height:80px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6c/Kazakh_ornament.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  opacity:0.15;
+}
+
+.ornament-top { margin-bottom:-40px; }
+.ornament-bottom { margin-top:-40px; transform: rotate(180deg); }
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1 class="fade">Али & Ая</h1>
+    <p class="fade">15 • Тамыз • 2026</p>
+  </div>
+</section>
+  <div class="ornament-bottom"></div>
+
+
+<!-- STORY -->
+<section class="story">
+  <div class="container fade">
+    <h2>Біздің махаббат тарихымыз</h2>
+    <p>
+      Бір қарапайым таныстық — жүрекке жақын сезімге айналды.
+      Бүгін сол сезімді өмір бойы бірге алып жүру үшін
+      сіздерді қуанышымызға ортақ болуға шақырамыз.
+    </p>
+  </div>
+</section>
+
+<!-- DETAILS -->
+<section>
+  <div class="container fade">
+    <h2>Той мәліметтері</h2>
+    <div class="details-grid">
+      <div class="card">
+        <h3>Күні</h3>
+        <p>15 Тамыз 2026</p>
+      </div>
+      <div class="card">
+        <h3>Уақыты</h3>
+        <p>18:00</p>
+      </div>
+      <div class="card">
+        <h3>Орны</h3>
+        <p>Royal Hall, Алматы</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAP -->
+<section>
+  <div class="container fade">
+    <h2>Мекенжай</h2>
+    <iframe src="https://maps.google.com/maps?q=almaty&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section>
+  <div class="container fade">
+    <h2>Тойға дейін</h2>
+    <div class="countdown" id="countdown"></div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section>
+  <div class="container fade">
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="story">
+  <div class="container fade">
+    <h2>Тізімге жазылу</h2>
+    <form>
+      <input type="text" placeholder="Атыңыз">
+      <input type="tel" placeholder="Телефон">
+      <textarea placeholder="Тілек"></textarea>
+      <button>Жіберу</button>
+    </form>
+  </div>
+</section>
+
+<!-- MUSIC -->
+<div class="music" onclick="toggleMusic()">♫</div>
+<audio id="bgm" autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3">
+</audio>
+
+<script>
+/* Scroll animation */
+const fades=document.querySelectorAll('.fade');
+window.addEventListener('scroll',()=>{
+  fades.forEach(f=>{
+    if(f.getBoundingClientRect().top<window.innerHeight-80){
+      f.classList.add('show');
+    }
+  })
+});
+
+/* Countdown */
+const target=new Date("August 15, 2026 18:00:00").getTime();
+const cd=document.getElementById('countdown');
+
+setInterval(()=>{
+  const now=new Date().getTime();
+  const d=target-now;
+  if(d<0)return;
+  const days=Math.floor(d/(1000*60*60*24));
+  const hours=Math.floor((d%(1000*60*60*24))/(1000*60*60));
+  const mins=Math.floor((d%(1000*60*60))/(1000*60));
+  cd.innerHTML=`
+    <div class="time">${days}<br>күн</div>
+    <div class="time">${hours}<br>сағ</div>
+    <div class="time">${mins}<br>мин</div>`;
+},1000);
+
+/* Music */
+const music=document.getElementById('bgm');
+function toggleMusic(){
+  music.paused?music.play():music.pause();
+}
+  
+/* RSVP -> WhatsApp */
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = form.querySelector('input[type="text"]').value;
+  const phone = form.querySelector('input[type="tel"]').value;
+  const wish = form.querySelector('textarea').value;
+
+  const text =
+    `Тойға қатысу:\n` +
+    `Аты: ${name}\n` +
+    `Телефон: ${phone}\n` +
+    `Тілек: ${wish}`;
+
+  const url = `https://wa.me/77076212009?text=${encodeURIComponent(text)}`;
+  window.open(url, '_blank');
+});
+  
+</script>
+
+</body>
+</html>
